@@ -24,6 +24,7 @@ def poster ():
 <head>
     <meta charset="UTF-8">
     <title>Poster</title>
+    <link rel="stylesheet" type:"text/css" href= {url_for('static', filename='css/style.css')}>
 </head>
 <body>
 <h1>Постер к фильму</h1>
@@ -36,5 +37,5 @@ alt="Тут должна была быть картинка но она не п�
 
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=5000)
+    app.run(host='127.0.0.1', port=5000, debug=True)
 
